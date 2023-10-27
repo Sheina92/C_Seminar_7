@@ -20,19 +20,14 @@ public class Answer {
 
   public static void PrintArray(double[, ] matrix) {
       // Введите свое решение ниже
-{
-    for (int i = 0; i < matrix.GetLength(0); i++)
-    {
-        // Console.Write($"{i}\t");
-        for (int j = 0; j <matrix.GetLength(1); j++)
+        for (int i=0; i<matrix.GetLength(0); i++)
         {
-            // Console.Write($"{j}\t");
-            Console.Write(matrix[i,j] + "\t");
+            for (int j=0; j<matrix.GetLength(1);j++)
+            {
+                Console.Write($"{matrix[i,j]}"+"\t");
+            }
+            Console.WriteLine();
         }
-        Console.WriteLine();
-    }
-}
-   
   }
 
   // Не удаляйте и не меняйте метод Main! 
